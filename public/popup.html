@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../assets/styles.css">
+		<title>Limaces</title>
+	</head>
+	<body>
+		<div id="errors" hidden></div>
+		<button class="button button--primary" id="toggle_form">
+			Ouvrir le formulaire de création de liste
+		</button>
+		<section id="forms_container" hidden>
+			<section id="import_export">
+				<div>
+					<button id="export_list" class="button">Exporter les données</button>
+					<input type="file" id="selectFiles" value="Import" class="button"/><br/>
+				</div>
+				<button id="import_list" class="button" hidden>Valider l'importation</button>
+
+			</section>
+			<form id="form">
+
+				<label for="list_label">Nom de liste</label>
+				<input type="text" name="list_label" id="list_label">
+
+				<label for="list_words">Liste de mots séparés par une virgule</label>
+				<input type="text" name="list_words" id="list_words">
+				<input class="button button--primary" type="submit" value="Enregistrer">
+
+			</form>
+		</section>
+	</body>
+</html></section><div id="root">
+<section id="lists"></section></div><script src="../lib/uuidv4.min.js"></script><script src="popup.js"></script></body></html></body></html>

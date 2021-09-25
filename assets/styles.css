@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	width: 500px;
+	margin: 0;
+	/* padding: 1em; */
+}
+
+p {
+	margin: 0;
+	word-wrap: break-word;
+	font-size: 1.5em;
+}
+
+#lists {
+	color: white;
+	background: #130345;
+	padding: 1em;
+}
+
+#lists > div {
+	margin: 0.5em;
+	padding: 1em;
+	cursor: pointer;
+	transition: all 50ms ease-out;
+	border-radius: 0.2em;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+}
+
+#lists em {
+	font-size: 2em;
+	border-radius: 0.2em;
+	font-weight: 600;
+}
+
+/* #lists > div:hover {
+	background: green;
+} */
+
+#lists > div > em {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+#errors {
+	background: tomato;
+	padding: 1em;
+	cursor: pointer;
+}
+
+#errors span {
+	color: white;
+}
+
+.button {
+	border: 0;
+	font-size: 14px;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	padding: 16px 20px;
+}
+
+.button--primary {
+	background-color: #0074e0;
+}
+
+.button--danger {
+	background-color: tomato;
+}
+
+.button--svg {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button--secondary {
+	background-color: green;
+}
+
+.button--danger > img,
+.button--secondary > img {
+	width: 24px;
+	height: 24px;
+	padding: 2px;
+}
+#lists > div > article {
+	display: flex;
+	flex-direction: unset;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+}
+
+label {
+	font-size: 1.5em;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+	cursor: pointer;
+}
+
+form#form {
+	padding: 1em;
+}
+
+input[type='submit'] {
+	display: block;
+	width: 100%;
+	margin: 1em 0;
+}
+
+input[type='text'] {
+	padding: 1em;
+	width: 100%;
+	border-radius: 0.2em;
+	border: 1px solid gray;
+}
+
+input.button.button--primary:hover,
+#toggle_form:hover {
+	background: #2093ff;
+}
+
+button#toggle_form {
+	width: 100%;
+	border-radius: 0;
+}
+
+section#import_export > div button,
+#import_export > div input,
+#import_export > button {
+	width: 100%;
+	border-radius: unset;
+}
+
+#export_list {
+	background: #130345;
+}
+
+#export_list:hover {
+	background: #2e1284;
+}
+#selectFiles,
+#import_list {
+	background-color: blueviolet;
+}
+
+#selectFiles:hover,
+#import_list:hover {
+	background-color: #ab54fb;
+}
